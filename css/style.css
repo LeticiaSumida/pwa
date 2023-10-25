@@ -30,7 +30,7 @@ img {
 }
 
 .slide-nav button {
-  -webkit-appearance: none;
+  -webkit-apperance: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   opacity: 0;
 }
