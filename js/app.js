@@ -1,6 +1,6 @@
 class SlideStories {
   constructor(id) {
-    this.slide = document.querySelector('[data-slide="${id}"]');
+    this.slide = document.querySelector(`[data-slide="${id}"]`);
     this.active = 0;
     this.init();
   }
@@ -44,7 +44,7 @@ class SlideStories {
 
   autoSlide() {
     clearTimeout(this.timeout);
-    this.timeout = setTimeout(this.next, 5000);
+    this.timeout = setTimeout(this.next, 3000);
   }
 
   init() {
@@ -59,12 +59,3 @@ class SlideStories {
 }
 
 new SlideStories('slide');
-  
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function() {
-      navigator.serviceWorker
-        .register("/serviceWorker.js")
-        .then(res => console.log("service worker registrado"))
-        .catch(err => console.log("service worker nao registrado", err))
-    })
-  }
