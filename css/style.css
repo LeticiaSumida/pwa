@@ -3,12 +3,14 @@ body{
 }
 
 img {
-  max-width: 100%;
+  width: 900px;
+  height: 500px;
   display: block;
 }
 
 .slide {
-  max-width: 970px;
+  width: 900px;
+  height: 500px;
   margin: 30px auto;
   display: grid;
   box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
