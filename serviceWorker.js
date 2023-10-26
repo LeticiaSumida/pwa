@@ -4,7 +4,7 @@ const assets = [
   "/index.html",
   "/css/style.css",
   "/js/app.js",
-  "/images/01.jpg",
+  "/images/01.png",
   "/images/02.jpg",
   "/images/03.jpg",
   "/images/04.jpg",
