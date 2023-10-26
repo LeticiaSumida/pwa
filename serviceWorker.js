@@ -18,7 +18,7 @@ const assets = [
   "/images/12.jpg",
   "/images/13.jpg",
   "/images/14.jpg",
-  "/images/closer.mp3"
+  "/images/msc.mp3"
 ]
 
 self.addEventListener("install", installEvent => {
