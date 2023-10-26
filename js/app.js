@@ -1,24 +1,5 @@
 const audio = document.getElementById('audio');
 
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-  navigator.serviceWorker
-     .register("/serviceWorker.js")
-     .then(res => console.log("service worker registrado"))
-     .catch(err => console.log("service worker nao registrado", err))
-   })
-}
-
-function playMusic(){
-  new SlideStories('slide');
-  audio.play();
-}
-document.getElementById('playButton').addEventListener('click', function (event){
-  playMusic();
-},{
-  once:true
-});
-
 class SlideStories {
   constructor(id) {
       this.slide = document.querySelector(`[data-slide="${id}"]`);
@@ -79,4 +60,21 @@ class SlideStories {
   }
 }
 
-//new SlideStories('slide');
+function playMusic(){
+  new SlideStories('slide');
+  audio.play();
+}
+document.getElementById('playButton').addEventListener('click', function (event){
+  playMusic();
+},{
+  once:true
+});
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+  navigator.serviceWorker
+     .register("/serviceWorker.js")
+     .then(res => console.log("service worker registrado"))
+     .catch(err => console.log("service worker nao registrado", err))
+   })
+}
