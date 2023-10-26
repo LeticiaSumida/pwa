@@ -79,6 +79,11 @@ img {
   }
 }
 
+.container button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .play {
   display: inline-block;
